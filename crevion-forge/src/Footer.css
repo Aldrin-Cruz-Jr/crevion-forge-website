@@ -1,0 +1,136 @@
+footer{
+    height: 640px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding-top: 90px;
+}
+.footerS2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ep{
+    display: flex;
+    flex-direction: row;
+}
+#footerLogo{
+    width: 100px;
+}
+#label{
+    font-size: 3rem;
+    cursor: pointer;
+}
+#emailC{
+    font-size: 1.6rem;
+    color: #5D5D6D;
+}
+#eaddressC{
+    font-size: 1.4rem;
+    color: black;
+    cursor: pointer;
+}
+#number{
+    font-size: 1.6rem;
+    color:#5D5D6D;
+}
+#numberC{
+    font-size: 1.4rem;
+    color: black;
+    cursor: pointer;
+}
+.email{
+    margin-right: 80px;
+}
+.icons img{
+    margin-right: 60px;
+}
+#lineB{
+    height: 2px;
+    width: 1700px;
+    background-color: #7a7a78;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 80px;
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    
+}
+#s2{
+    margin-top: 0;
+}
+.iconF{
+    cursor: pointer;
+}
+@media all and (max-width: 768px) {
+  footer {
+    margin: 0 20px;
+    padding-top: 50px;
+  }
+
+  #label {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .footerS2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .ep {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .email {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  #emailC, #number {
+    font-size: 1.4rem;
+  }
+
+  #eaddressC, #numberC {
+    font-size: 1.3rem;
+  }
+
+  .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .icons img {
+    margin: 0;
+    width: 40px;
+  }
+
+  #lineB {
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+
+  .final {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  #footerLogo {
+    width: 80px;
+  }
+}

@@ -1,22 +1,26 @@
 import React from 'react';
-import Nav from './Nav.jsx'
+import './Nav.css'
+import crevionLogo from './assets/images/official_crevion_logo-removebg-preview.png'
+import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
     <header className="navBar">  
       <div id="contain">
-        <img 
-          src="assets/images/official_crevion_logo-removebg-preview.png" 
+
+        <Link to='/'>
+          <img 
+          src={crevionLogo} 
           alt="logo" 
           id="logo"
-        />
-        <h1 id="title">CREVION FORGE</h1>
+        /></Link>
+        <Link to='/'><h1 id="title">CREVION FORGE</h1></Link>
       </div>
       <nav className="containNavItems">
         <ul className="navItems">
-          <li>OFFERS</li>
-          <li>BENEFITS</li>
-          <li>TEAM</li>
-          <li>CONTACT</li>
+          <a href="#offersContainID"><li>OFFERS</li></a>
+          <a href="#featID"><li>BENEFITS</li></a>
+          <a href="#teamID"><li>TEAM</li></a>
+          <a href="#contactID"><li>CONTACT</li></a>
         </ul>
       </nav>
     </header>
